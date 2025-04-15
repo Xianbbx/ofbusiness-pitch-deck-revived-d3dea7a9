@@ -39,25 +39,28 @@
   }
 
   body {
-    @apply bg-background text-foreground font-montserrat;
+    @apply bg-background text-foreground;
     font-family: 'Montserrat', sans-serif;
   }
 }
 
 @layer components {
   .slide {
-    @apply w-full min-h-screen flex flex-col items-center justify-center p-8 relative overflow-hidden;
+    @apply w-full h-screen flex flex-col items-center justify-center p-8 relative overflow-hidden;
     background: linear-gradient(135deg, #f0f9f7, #f0f7ff);
   }
   
   .slide-content {
-    @apply bg-white rounded-xl shadow-lg p-8 max-w-4xl w-full animate-fade-in;
+    @apply bg-white rounded-xl shadow-lg p-8 max-w-4xl w-full animate-fade-in overflow-auto max-h-[85vh];
     border-top: 4px solid #0DB09C;
+    border-bottom: 4px solid #7A4529;
   }
   
   .slide-title {
-    @apply text-3xl md:text-4xl font-bold mb-6 border-b-2 pb-2 text-ofbusiness-dark border-ofbusiness-green;
-    color: #0DB09C;
+    @apply text-3xl md:text-4xl font-bold mb-6 border-b-2 pb-2 text-ofbusiness-dark;
+    background: linear-gradient(90deg, #0DB09C, #7A4529);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   .slide-footer {
@@ -73,10 +76,18 @@
   }
 
   .icon-bg-primary {
-    @apply bg-gradient-to-r from-ofbusiness-green to-blue-400 text-white p-3 rounded-full;
+    @apply bg-gradient-to-r from-ofbusiness-green to-teal-400 text-white p-3 rounded-full;
   }
 
   .icon-bg-secondary {
     @apply bg-gradient-to-r from-ofbusiness-brown to-amber-400 text-white p-3 rounded-full;
+  }
+  
+  .highlight-box {
+    @apply bg-gradient-to-r from-blue-50 to-teal-50 p-6 rounded-lg border-l-4 border-ofbusiness-green text-center my-6;
+  }
+  
+  .question-tag {
+    @apply inline-block px-3 py-1 rounded-full text-white font-medium text-sm mb-2;
   }
 }

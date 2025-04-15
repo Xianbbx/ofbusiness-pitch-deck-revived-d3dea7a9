@@ -6,6 +6,7 @@ import ProblemSlide from './slides/ProblemSlide';
 import TargetCustomersSlide from './slides/TargetCustomersSlide';
 import ValuePropositionSlide from './slides/ValuePropositionSlide';
 import RevenueSlide from './slides/RevenueSlide';
+import LearningsSlide from './slides/LearningsSlide';
 import TeamSlide from './slides/TeamSlide';
 
 const PitchDeck: React.FC = () => {
@@ -17,6 +18,7 @@ const PitchDeck: React.FC = () => {
     <TargetCustomersSlide key="target" />,
     <ValuePropositionSlide key="value" />,
     <RevenueSlide key="revenue" />,
+    <LearningsSlide key="learnings" />,
     <TeamSlide key="team" />
   ];
 
