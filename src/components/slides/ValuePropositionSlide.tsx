@@ -23,7 +23,7 @@ const ValuePropositionSlide: React.FC = () => {
               What is it?
             </h3>
             <p className="text-xl font-bold text-center px-4 py-2 bg-white rounded-lg shadow-sm border border-ofbusiness-green/20">
-              "OfBusiness is an online B2B e-commerce platform for SMEs, primarily in Delhi-NCR and Trichy region, who need raw materials like steel, TMT, chemicals, polymers at a rate cheaper than local suppliers and with assured delivery, as well as better credit lines."
+              "OfBusiness is an <span className="text-red-600">online B2B e-commerce platform</span> for <span className="text-blue-600">SMEs, primarily in Delhi-NCR and Trichy region, who need raw materials like steel, TMT, chemicals, polymers</span> at a <span className="text-green-600">rate cheaper than local suppliers and with assured delivery, as well as better credit lines</span>."
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4">
               <span className="question-tag bg-red-500">What is it?</span>

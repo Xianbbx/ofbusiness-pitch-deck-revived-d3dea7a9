@@ -5,8 +5,8 @@ const TeamSlide: React.FC = () => {
   return (
     <div className="slide">
       <div className="slide-content relative">
-        {/* Background image with blur effect */}
-        <div className="absolute inset-0 bg-[url('https://img.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg')] bg-cover bg-center opacity-5"></div>
+        {/* Background gradient instead of image */}
+        <div className="absolute inset-0 bg-gradient-to-br from-ofbusiness-green/5 to-ofbusiness-brown/5"></div>
         
         <div className="relative z-10">
           <h2 className="slide-title">Our Team</h2>

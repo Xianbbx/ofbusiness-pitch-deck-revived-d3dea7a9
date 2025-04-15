@@ -1,13 +1,13 @@
 
 import React from 'react';
-import { BarChart, Banknote, Percent, TrendingUp, BarChart3, Lightbulb } from 'lucide-react';
+import { BarChart, Banknote, TrendingUp, BarChart3, Lightbulb } from 'lucide-react';
 
 const RevenueSlide: React.FC = () => {
   return (
     <div className="slide">
       <div className="slide-content relative">
-        {/* Background image with blur effect */}
-        <div className="absolute inset-0 bg-[url('https://img.freepik.com/free-photo/business-finance-employment-female-successful-entrepreneurs-concept-confident-professional-businesswoman-cfo-company-founder-showing-presentation-pointing-finance-report-office_1258-59194.jpg')] bg-cover bg-center opacity-5"></div>
+        {/* Background gradient instead of image */}
+        <div className="absolute inset-0 bg-gradient-to-br from-ofbusiness-green/5 to-ofbusiness-brown/5"></div>
         
         <div className="relative z-10">
           <h2 className="slide-title">Revenue & Profit Streams</h2>
@@ -34,14 +34,6 @@ const RevenueSlide: React.FC = () => {
                     <span><span className="font-medium text-ofbusiness-dark">Interest Spread on Financing:</span> We maintain a healthy spread between our borrowing cost and the interest we charge to SMEs for purchase financing (typically 3-6 months period).</span>
                   </li>
                 </ul>
-                
-                <div className="mt-6 flex justify-center">
-                  <img 
-                    src="https://img.freepik.com/free-vector/gradient-stock-market-concept_23-2149166910.jpg" 
-                    alt="Revenue Model" 
-                    className="h-32 w-auto rounded-lg shadow-sm border border-gray-100"
-                  />
-                </div>
               </div>
             </div>
             
@@ -88,14 +80,6 @@ const RevenueSlide: React.FC = () => {
                       </p>
                     </div>
                   </div>
-                </div>
-                
-                <div className="mt-6 flex justify-center">
-                  <img 
-                    src="https://img.freepik.com/free-vector/profit-growth-concept-illustration_114360-8760.jpg" 
-                    alt="Road to Profitability" 
-                    className="h-32 w-auto rounded-lg shadow-sm border border-gray-100"
-                  />
                 </div>
               </div>
             </div>

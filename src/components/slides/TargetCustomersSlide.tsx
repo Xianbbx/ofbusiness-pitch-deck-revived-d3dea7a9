@@ -6,8 +6,8 @@ const TargetCustomersSlide: React.FC = () => {
   return (
     <div className="slide">
       <div className="slide-content relative">
-        {/* Background image with blur effect */}
-        <div className="absolute inset-0 bg-[url('https://img.freepik.com/free-photo/medium-shot-man-working-factory_23-2149058253.jpg')] bg-cover bg-center opacity-5"></div>
+        {/* Background gradient instead of image */}
+        <div className="absolute inset-0 bg-gradient-to-br from-ofbusiness-green/5 to-ofbusiness-brown/5"></div>
         
         <div className="relative z-10">
           <h2 className="slide-title">Target Customers</h2>
@@ -147,14 +147,6 @@ const TargetCustomersSlide: React.FC = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              
-              <div className="flex justify-center">
-                <img 
-                  src="https://img.freepik.com/free-photo/male-worker-factory_23-2148336703.jpg" 
-                  alt="Factory Worker" 
-                  className="h-40 rounded-lg shadow-md object-cover"
-                />
               </div>
             </div>
           </div>

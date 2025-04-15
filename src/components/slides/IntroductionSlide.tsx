@@ -6,14 +6,14 @@ const IntroductionSlide: React.FC = () => {
   return (
     <div className="slide">
       <div className="slide-content flex flex-col items-center text-center relative">
-        {/* Background image with blur effect */}
-        <div className="absolute inset-0 bg-[url('https://img.freepik.com/free-photo/factory-worker-using-digital-tablet_53876-94350.jpg')] bg-cover bg-center opacity-10"></div>
+        {/* Background image */}
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/dd144ea4-f53c-432d-8f99-c0654482fefd.png')] bg-cover bg-center opacity-30"></div>
         
         <div className="relative z-10">
           <img 
             src="/lovable-uploads/4d4e40eb-d9b1-4fdb-b200-a44d3c4559cf.png" 
             alt="OfBusiness Logo" 
-            className="w-64 md:w-80 mb-4 animate-slide-in"
+            className="w-64 md:w-80 mb-4 animate-slide-in border-4 border-ofbusiness-green shadow-lg rounded-lg p-2 bg-white/80"
           />
           
           <div className="max-w-2xl mx-auto">

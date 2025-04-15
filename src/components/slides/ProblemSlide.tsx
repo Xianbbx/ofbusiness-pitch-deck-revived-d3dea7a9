@@ -7,7 +7,7 @@ const ProblemSlide: React.FC = () => {
     <div className="slide">
       <div className="slide-content relative">
         {/* Background image with blur effect */}
-        <div className="absolute inset-0 bg-[url('https://img.freepik.com/free-photo/businessman-holding-pen-pointing-document_1262-2151.jpg')] bg-cover bg-center opacity-5"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-ofbusiness-green/5 to-ofbusiness-brown/5"></div>
         
         <div className="relative z-10">
           <h2 className="slide-title">The Problem</h2>
@@ -88,14 +88,6 @@ const ProblemSlide: React.FC = () => {
                     <span>Fragmented industry creates opportunity for a platform that connects suppliers and buyers</span>
                   </li>
                 </ul>
-              </div>
-              
-              <div className="flex justify-center">
-                <img 
-                  src="https://img.freepik.com/free-photo/close-up-supply-chain-representation_23-2149853372.jpg" 
-                  alt="Supply Chain Problems" 
-                  className="w-4/5 h-auto rounded-lg shadow-md"
-                />
               </div>
             </div>
           </div>
