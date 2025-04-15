@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ShoppingBag, Percent, Clock, CreditCard } from 'lucide-react';
+import { ShoppingBag, Percent, Clock, CreditCard, AlertTriangle } from 'lucide-react';
 
 const ProblemSlide: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ const ProblemSlide: React.FC = () => {
             
             <div className="space-y-6">
               <div className="flex items-start gap-4 animate-slide-in" style={{animationDelay: '0.1s'}}>
-                <div className="bg-ofbusiness-green p-2 rounded-full text-white mt-1">
+                <div className="icon-bg-primary">
                   <ShoppingBag size={20} />
                 </div>
                 <div>
@@ -26,7 +26,7 @@ const ProblemSlide: React.FC = () => {
               </div>
               
               <div className="flex items-start gap-4 animate-slide-in" style={{animationDelay: '0.2s'}}>
-                <div className="bg-ofbusiness-green p-2 rounded-full text-white mt-1">
+                <div className="icon-bg-primary">
                   <Percent size={20} />
                 </div>
                 <div>
@@ -36,7 +36,7 @@ const ProblemSlide: React.FC = () => {
               </div>
               
               <div className="flex items-start gap-4 animate-slide-in" style={{animationDelay: '0.3s'}}>
-                <div className="bg-ofbusiness-green p-2 rounded-full text-white mt-1">
+                <div className="icon-bg-primary">
                   <CreditCard size={20} />
                 </div>
                 <div>
@@ -46,7 +46,7 @@ const ProblemSlide: React.FC = () => {
               </div>
               
               <div className="flex items-start gap-4 animate-slide-in" style={{animationDelay: '0.4s'}}>
-                <div className="bg-ofbusiness-green p-2 rounded-full text-white mt-1">
+                <div className="icon-bg-primary">
                   <Clock size={20} />
                 </div>
                 <div>
@@ -57,27 +57,42 @@ const ProblemSlide: React.FC = () => {
             </div>
           </div>
           
-          <div className="col-span-1 bg-ofbusiness-light rounded-lg p-6 flex flex-col justify-center animate-fade-in">
-            <h3 className="font-bold text-xl mb-4 text-ofbusiness-dark">Why This Matters Now</h3>
+          <div className="col-span-1 flex flex-col gap-6">
+            <div className="gradient-card flex-1 animate-fade-in">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="icon-bg-secondary">
+                  <AlertTriangle size={20} />
+                </div>
+                <h3 className="font-bold text-xl text-ofbusiness-brown">Why This Matters Now</h3>
+              </div>
+              
+              <ul className="space-y-3 text-ofbusiness-gray">
+                <li className="flex items-start gap-2">
+                  <span className="text-ofbusiness-brown font-bold">•</span>
+                  <span>India's manufacturing sector is growing rapidly with government initiatives like "Make in India"</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-ofbusiness-brown font-bold">•</span>
+                  <span>Digital penetration has reached a tipping point for B2B transactions</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-ofbusiness-brown font-bold">•</span>
+                  <span>SMEs contribute ~30% to India's GDP but lack access to efficient procurement and financing solutions</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-ofbusiness-brown font-bold">•</span>
+                  <span>Fragmented industry creates opportunity for a platform that connects suppliers and buyers</span>
+                </li>
+              </ul>
+            </div>
             
-            <ul className="space-y-3 text-ofbusiness-gray">
-              <li className="flex items-start gap-2">
-                <span className="text-ofbusiness-green font-bold">•</span>
-                <span>India's manufacturing sector is growing rapidly with government initiatives like "Make in India"</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-ofbusiness-green font-bold">•</span>
-                <span>Digital penetration has reached a tipping point for B2B transactions</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-ofbusiness-green font-bold">•</span>
-                <span>SMEs contribute ~30% to India's GDP but lack access to efficient procurement and financing solutions</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-ofbusiness-green font-bold">•</span>
-                <span>Fragmented industry creates opportunity for a platform that connects suppliers and buyers</span>
-              </li>
-            </ul>
+            <div className="flex justify-center">
+              <img 
+                src="https://img.freepik.com/free-vector/supply-chain-management-abstract-concept-illustration_335657-3891.jpg" 
+                alt="Supply Chain Problems" 
+                className="w-4/5 h-auto rounded-lg shadow-md"
+              />
+            </div>
           </div>
         </div>
       </div>

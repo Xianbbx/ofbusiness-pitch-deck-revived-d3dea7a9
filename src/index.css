@@ -47,15 +47,17 @@
 @layer components {
   .slide {
     @apply w-full min-h-screen flex flex-col items-center justify-center p-8 relative overflow-hidden;
-    background: linear-gradient(to bottom right, #ffffff, #f0f9f7);
+    background: linear-gradient(135deg, #f0f9f7, #f0f7ff);
   }
   
   .slide-content {
     @apply bg-white rounded-xl shadow-lg p-8 max-w-4xl w-full animate-fade-in;
+    border-top: 4px solid #0DB09C;
   }
   
   .slide-title {
     @apply text-3xl md:text-4xl font-bold mb-6 border-b-2 pb-2 text-ofbusiness-dark border-ofbusiness-green;
+    color: #0DB09C;
   }
   
   .slide-footer {
@@ -64,5 +66,17 @@
   
   .nav-button {
     @apply fixed top-1/2 transform -translate-y-1/2 bg-ofbusiness-green text-white p-2 rounded-full shadow-md z-10 opacity-70 hover:opacity-100 transition-opacity;
+  }
+
+  .gradient-card {
+    @apply bg-gradient-to-br from-white to-blue-50 shadow-md rounded-xl p-6 border border-blue-100;
+  }
+
+  .icon-bg-primary {
+    @apply bg-gradient-to-r from-ofbusiness-green to-blue-400 text-white p-3 rounded-full;
+  }
+
+  .icon-bg-secondary {
+    @apply bg-gradient-to-r from-ofbusiness-brown to-amber-400 text-white p-3 rounded-full;
   }
 }
